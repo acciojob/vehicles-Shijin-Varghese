@@ -4,6 +4,11 @@ public class Vehicle {
 
     private String name;
     protected int currentSpeed;
+
+    public int getCurrentSpeed() {
+        return currentSpeed;
+    }
+
     protected int currentDirection;
 
     public Vehicle(String name) {
@@ -21,6 +26,14 @@ public class Vehicle {
         //direction is in degrees, add it to the current direction
         currentDirection=direction;
         System.out.println("steer method called - The direction is changed to: " + currentDirection + " degrees");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getCurrentDirection() {
+        return currentDirection;
     }
 
     public void move(int speed, int direction){
