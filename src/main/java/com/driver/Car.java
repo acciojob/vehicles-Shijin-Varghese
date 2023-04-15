@@ -4,6 +4,11 @@ public class Car extends Vehicle {
     private int wheels;
     private String type;
     private int doors;
+
+    public void setGears(int gears) {
+        this.gears = gears;
+    }
+
     private int gears;
     private boolean isManual;
     private int currentGear;
@@ -60,8 +65,8 @@ public Car(){}
     }
 
     public void changeSpeed(int newSpeed, int newDirection){
-
-         System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
         super.move(newSpeed,newDirection);
+         System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
+
 }
 }
